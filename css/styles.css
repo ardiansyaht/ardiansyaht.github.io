@@ -11201,3 +11201,8 @@ body {
 .footer {
   padding: 5rem 0;
 }
+.order-section {
+  background-image: url('img/bg-order.jpg');
+  background-size: cover;
+  background-position: center;
+}
