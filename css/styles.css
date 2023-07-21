@@ -11191,12 +11191,31 @@ body {
 .footer {
   padding: 5rem 0;
 }
-.order-section {
-<<<<<<< HEAD
-  background-image: url("../assets/img/bg-order.jpg");
-=======
-  background-image: url('assets/img/bg-order.jpg');
->>>>>>> 0368b158d3ccb058cdc2092b4d5fe2af6d3ae215
+.background-menu {
+  background-image: url("../assets/img/profile-designer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 80px 0; /* Sesuaikan padding sesuai kebutuhan */
+}
+
+
+.e-learning-section {
+  background-image: url("../assets/img/elearning-bg.jpg");
   background-size: cover;
   background-position: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
+
+
+.e-learning-section h2,
+.e-learning-section p,
+.e-learning-section h5 {
+  color: #fff; 
+}
+
+
+
+
+
