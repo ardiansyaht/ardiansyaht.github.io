@@ -94,7 +94,8 @@
                 </div>
                 <!-- Project Two Row-->
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/bg-5.jpg" alt="..." /></div>
+                    <div class="col-lg-6">
+                    <img class="img-fluid" src="assets/img/bg-5.jpg" alt="..." /></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
@@ -109,13 +110,12 @@
                 </div>
             </div>
         </section>
-        <section class="order-section" id="order" style="background-image: url('img/bg-order.jpg'); background-size: cover; background-position: center;">
+        <section class="order-section">
+            <img class="img-fluid" src="assets/img/bg-5.jpg" alt="..." /></div>
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
-                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">Place Your Order</h2>
-                        <form class="form-signup" id="orderForm" data-sb-form-api-token="API_TOKEN">
+                        <form class="form-signup" id="orderForm">
                             <!-- Form fields for order details -->
                             <div class="mb-3">
                                 <label for="fullName" class="form-label">Full Name</label>
@@ -129,13 +129,12 @@
                                 <label for="orderDetails" class="form-label">Order Details</label>
                                 <textarea class="form-control" id="orderDetails" name="orderDetails" placeholder="Enter the details of your order" required></textarea>
                             </div>
-                            <button class="btn btn-primary" type="submit">Submit Order</button>
+                            <button class="btn btn-primary" type="submit" onclick="submitOrder()">Submit Order</button>
                         </form>
                     </div>
                 </div>
             </div>
-        </section>        
-        
+        </section>
         <!-- Contact-->
         <section class="contact-section bg-black">
             <div class="container px-4 px-lg-5">
@@ -178,6 +177,9 @@
                 </div>
             </div>
         </section>
+        
+          
+    
        
         <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Visionary Visuals</div></footer>
         

@@ -43,12 +43,31 @@ window.addEventListener('DOMContentLoaded', event => {
     const responsiveNavItems = [].slice.call(
         document.querySelectorAll('#navbarResponsive .nav-link')
     );
+    function submitOrder(event) {
+        event.preventDefault(); // Mencegah pengiriman formulir default
+    
+        // Mengambil nilai dari input formulir
+        var fullName = document.getElementById('fullName').value;
+        var email = document.getElementById('email').value;
+        var orderDetails = document.getElementById('orderDetails').value;
+    
+        // Konstruksi URL tujuan
+        var url = 'https://www.instagram.com/ardiansyah_1106/?fullName=' + encodeURIComponent(fullName) + '&email=' + encodeURIComponent(email) + '&orderDetails=' + encodeURIComponent(orderDetails);
+    
+        // Mengarahkan pengguna ke URL tujuan
+        window.location.href = url;
+    }
+    
+    var orderForm = document.getElementById('orderForm');
+    orderForm.addEventListener('submit', submitOrder);
     responsiveNavItems.map(function (responsiveNavItem) {
         responsiveNavItem.addEventListener('click', () => {
             if (window.getComputedStyle(navbarToggler).display !== 'none') {
                 navbarToggler.click();
+                
             }
         });
     });
 
 });
+
