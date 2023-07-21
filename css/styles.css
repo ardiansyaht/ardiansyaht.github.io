@@ -11192,7 +11192,11 @@ body {
   padding: 5rem 0;
 }
 .order-section {
+<<<<<<< HEAD
   background-image: url("../assets/img/bg-order.jpg");
+=======
+  background-image: url('assets/img/bg-order.jpg');
+>>>>>>> 0368b158d3ccb058cdc2092b4d5fe2af6d3ae215
   background-size: cover;
   background-position: center;
 }
